@@ -1,0 +1,16 @@
+{
+  "name": "acd-test-framework",
+  "version:": "0.0.0",
+  "scripts": {
+    "start": "node acd-batch.js",
+    "debug": "node --inspect-brk acd-batch.js"
+  },
+  "dependencies": {
+    "fs-readdir-recursive": "^1.1.0",
+    "got": "^11.8.6",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.18.1",
+    "ospath": "^1.2.2",
+    "q": "^1.5.0"
+  }
+}

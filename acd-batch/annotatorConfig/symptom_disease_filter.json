@@ -1,0 +1,42 @@
+{
+  "annotatorFlows": [
+    {
+      "flow": {
+        "elements": [
+          {
+            "annotator": {
+              "name": "symptom_disease",
+              "configurations": [
+                {
+                  "filter": {
+                    "target": "unstructured.data.SymptomDiseaseInd",
+                    "condition": {
+                      "type": "match",
+                      "field": "coveredText",
+                      "values": [
+                        "was"
+                      ],
+                      "not":true,
+                      "operator": "equals"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "annotator": {
+              "name": "concept_detection"
+             }
+          }
+        ],
+        "async": true
+      }
+    }
+  ],
+  "unstructured": [
+    {
+      "text": "Replaced with content from data directory file(s)"
+    }
+  ]
+}
