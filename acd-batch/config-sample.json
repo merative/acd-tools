@@ -1,0 +1,12 @@
+{
+	"dataDir": "./data",
+	"//dataDir": "~/Downloads/From MTsamples.com/",
+	"recurse": true,
+	"//outpuDir": "~/Documents/watson/healthcare/example_data/disease_class/outfiles",
+	"printErrors": true,
+	"annotatorConfig": "./annotatorConfig/default.json",
+	"url": "https://watsonpow01.rch.stglabs.ibm.com/services/clinical_data_annotator/api/v1/analyze?version=2017-12-01&keep_config=false&keep_flow=false",
+	"authentication":"<your authentication token>",
+	"extendWordsBy": 0,
+	"extendAnnotations": ["SymptomDiseaseInd", "ProcedureInd", "MedicationInd", "IcaCancerDiagnosisInd"]
+}

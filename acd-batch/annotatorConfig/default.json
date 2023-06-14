@@ -1,0 +1,28 @@
+{
+  "annotatorFlows": [
+    {
+      "flow": {
+        "elements": [
+          {
+            "flow": {
+              "elements": [
+                {
+                  "annotator": {
+                    "name": "symptom_disease"
+                  }
+                }
+              ],
+              "async": true
+            }
+          }
+        ],
+        "async": false
+      }
+    }
+  ],
+  "unstructured": [
+    {
+      "text": "Replaced with content from data directory file(s)"
+    }
+  ]
+}
